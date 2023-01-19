@@ -1,0 +1,12 @@
+<h2>Por país</h2>
+<hr> 
+<app-input (OnEneter)="buscar( $event )" (OnDebounce)="Suggestion ($event)" ></app-input>
+<hr>
+
+<div class="alert alert-danger" *ngIf="hasError">
+    No se encontrol nada referente a: {{ termino }}
+</div>
+
+<div class="row" *ngIf="!hasError && Countries.length > 0">
+<app-table [Countries]="Countries"></app-table>
+</div>

@@ -1,0 +1,43 @@
+<h2>Por region</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <form (ngSubmit)="SearchCountryByRegion()" autocomplete="off">
+            <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="region" name="region">
+        </form>
+    </div>
+</div>
+
+<hr>
+<div class="alert alert-danger">
+    No se encontrol el país por region
+</div>
+
+<div class="row">
+    <div class="col">
+        <table class="table table-hover"> 
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Población</th>
+                    <th>Bandera</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Argentina</td>
+                    <td>45000000</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png" alt="Argentina" width="50">
+                    </td>
+                    <td>
+                        <a href="/pais/cri" class="btn btn-primary">Ver más</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
